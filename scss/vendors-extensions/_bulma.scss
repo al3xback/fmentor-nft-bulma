@@ -8,13 +8,13 @@ html {
 
 .card--custom {
 	width: 100%;
-	max-width: func.rem(350);
-	padding: func.rem(24);
-	margin: func.rem(40) 0 func.rem(60);
+	max-width: func.em(350);
+	padding: func.em(24);
+	margin: func.em(40) 0 func.em(60);
 }
 
 .card--custom .card-image {
-	margin-bottom: func.rem(24);
+	margin-bottom: func.em(24);
 	background-color: var.$color-soft-blue;
 	@include mix.border-radius(8px);
 	cursor: pointer;
@@ -48,21 +48,21 @@ html {
 }
 
 .card--custom .title {
-	font-size: 1.375rem;
+	font-size: 1.375em;
 	color: var.$color-soft-blue;
 	line-height: 1.2727;
 }
 
 .card--custom .title {
-	margin-bottom: func.rem(12, 22);
+	margin-bottom: func.em(12, 22);
 }
 
 .card--custom .content {
-	margin-bottom: func.rem(16, 18);
+	margin-bottom: func.em(16, 18);
 }
 
 .card--custom .level {
-	font-size: func.rem(15);
+	font-size: func.em(15);
 }
 
 .card--custom .level-left {
@@ -71,12 +71,12 @@ html {
 }
 
 .card--custom .icon {
-	width: 1.2rem;
+	width: 1.2em;
 }
 
 .card--custom .media {
-	padding-top: func.rem(16);
-	margin-top: func.rem(16);
+	padding-top: func.em(16);
+	margin-top: func.em(16);
 	border-top: 1px solid var.$color-dark-blue-3;
 }
 
@@ -85,23 +85,23 @@ html {
 }
 
 .card--custom .media-content p {
-	font-size: func.rem(15);
+	font-size: func.em(15);
 }
 
 @media (min-width: 48em) {
 	.card--custom .title {
-		margin-bottom: func.rem(16, 22);
+		margin-bottom: func.em(16, 22);
 	}
 
 	.card--custom .content {
-		margin-bottom: func.rem(24, 18);
+		margin-bottom: func.em(24, 18);
 	}
 
 	.card--custom .level {
-		font-size: func.rem(16);
+		font-size: func.em(16);
 	}
 
 	.card--custom .media-content p {
-		font-size: func.rem(16);
+		font-size: func.em(16);
 	}
 }

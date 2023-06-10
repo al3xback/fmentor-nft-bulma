@@ -10287,13 +10287,13 @@ html {
 
 .card--custom {
   width: 100%;
-  max-width: 21.875rem;
-  padding: 1.5rem;
-  margin: 2.5rem 0 3.75rem;
+  max-width: 21.875em;
+  padding: 1.5em;
+  margin: 2.5em 0 3.75em;
 }
 
 .card--custom .card-image {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
   background-color: hsl(215, 51%, 70%);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -10336,21 +10336,21 @@ html {
 }
 
 .card--custom .title {
-  font-size: 1.375rem;
+  font-size: 1.375em;
   color: hsl(215, 51%, 70%);
   line-height: 1.2727;
 }
 
 .card--custom .title {
-  margin-bottom: 0.5454545455rem;
+  margin-bottom: 0.5454545455em;
 }
 
 .card--custom .content {
-  margin-bottom: 0.8888888889rem;
+  margin-bottom: 0.8888888889em;
 }
 
 .card--custom .level {
-  font-size: 0.9375rem;
+  font-size: 0.9375em;
 }
 
 .card--custom .level-left {
@@ -10359,12 +10359,12 @@ html {
 }
 
 .card--custom .icon {
-  width: 1.2rem;
+  width: 1.2em;
 }
 
 .card--custom .media {
-  padding-top: 1rem;
-  margin-top: 1rem;
+  padding-top: 1em;
+  margin-top: 1em;
   border-top: 1px solid hsl(215, 32%, 27%);
 }
 
@@ -10373,21 +10373,21 @@ html {
 }
 
 .card--custom .media-content p {
-  font-size: 0.9375rem;
+  font-size: 0.9375em;
 }
 
 @media (min-width: 48em) {
   .card--custom .title {
-    margin-bottom: 0.7272727273rem;
+    margin-bottom: 0.7272727273em;
   }
   .card--custom .content {
-    margin-bottom: 1.3333333333rem;
+    margin-bottom: 1.3333333333em;
   }
   .card--custom .level {
-    font-size: 1rem;
+    font-size: 1em;
   }
   .card--custom .media-content p {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 /* Box sizing rules */
@@ -10478,27 +10478,27 @@ h6 {
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 1.375em;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 h5 {
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 h6 {
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 300;
   line-height: 1.4444444444;
 }
