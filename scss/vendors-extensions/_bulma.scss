@@ -38,8 +38,8 @@ html {
 	opacity: 1;
 }
 
-.card--custom .card-image:first-child .image,
-.card--custom .card-image:first-child img {
+.card--custom .card-image .image,
+.card--custom .card-image img {
 	@include mix.border-radius(inherit);
 }
 
@@ -53,11 +53,11 @@ html {
 	line-height: 1.2727;
 }
 
-.card--custom .title:not(:last-child) {
+.card--custom .title {
 	margin-bottom: func.rem(12, 22);
 }
 
-.card--custom .content:not(:last-child) {
+.card--custom .content {
 	margin-bottom: func.rem(16, 18);
 }
 
@@ -89,11 +89,11 @@ html {
 }
 
 @media (min-width: 48em) {
-	.card--custom .title:not(:last-child) {
+	.card--custom .title {
 		margin-bottom: func.rem(16, 22);
 	}
 
-	.card--custom .content:not(:last-child) {
+	.card--custom .content {
 		margin-bottom: func.rem(24, 18);
 	}
 
