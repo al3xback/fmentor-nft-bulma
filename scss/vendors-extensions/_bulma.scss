@@ -15,6 +15,9 @@ html {
 
 .card--custom .card-image {
 	margin-bottom: func.em(24);
+}
+
+.card--custom .card-image .image {
 	background-color: var.$color-soft-blue;
 	@include mix.border-radius(8px);
 	cursor: pointer;
@@ -34,12 +37,11 @@ html {
 	opacity: 0;
 }
 
-.card--custom .card-image:hover .image::after {
+.card--custom .card-image .image:hover::after {
 	opacity: 1;
 }
 
-.card--custom .card-image .image,
-.card--custom .card-image img {
+.card--custom .card-image .image img {
 	@include mix.border-radius(inherit);
 }
 
