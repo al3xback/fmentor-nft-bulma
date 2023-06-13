@@ -1,4 +1,3 @@
-@use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 @use '../abstracts/mixins' as mix;
 
@@ -6,104 +5,36 @@ html {
 	overflow: visible;
 }
 
-.card--custom {
-	width: 100%;
+.card {
 	max-width: func.em(350);
-	padding: func.em(24);
-	margin: func.em(40) 0 func.em(60);
 }
 
-.card--custom .card-image {
-	margin-bottom: func.em(24);
-}
-
-.card--custom .card-image .image {
-	background-color: var.$color-soft-blue;
-	@include mix.border-radius(8px);
-	cursor: pointer;
-}
-
-.card--custom .card-image .image::after {
-	content: '';
-	position: absolute;
-	inset: 0;
-	margin: auto;
-	background-color: var.$color-cyan-light;
-	background-image: url('../images/icons/view.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	@include mix.border-radius(inherit);
-	@include mix.transition(opacity 0.3s);
-	opacity: 0;
-}
-
-.card--custom .card-image .image:hover::after {
-	opacity: 1;
-}
-
-.card--custom .card-image .image img {
+.card-image:first-child img {
 	@include mix.border-radius(inherit);
 }
 
-.card--custom .card-content {
-	padding: 0;
+.card-content:last-child {
+	@include mix.border-radius(0);
 }
 
-.card--custom .title {
-	font-size: 1.375em;
-	color: var.$color-soft-blue;
-	line-height: 1.2727;
-}
-
-.card--custom .title {
+.title:not(:last-child) {
 	margin-bottom: func.em(12, 22);
 }
 
-.card--custom .content {
+.content:not(:last-child) {
 	margin-bottom: func.em(16, 18);
 }
 
-.card--custom .level {
-	font-size: func.em(15);
-}
-
-.card--custom .level-left {
-	font-weight: var.$font-weight-600;
-	color: var.$color-cyan;
-}
-
-.card--custom .icon {
+.icon {
 	width: 1.2em;
 }
 
-.card--custom .media {
-	padding-top: func.em(16);
-	margin-top: func.em(16);
-	border-top: 1px solid var.$color-dark-blue-3;
-}
-
-.card--custom .media-left .image img {
-	border: 1px solid var.$color-white;
-}
-
-.card--custom .media-content p {
-	font-size: func.em(15);
-}
-
 @media (min-width: 48em) {
-	.card--custom .title {
+	.title:not(:last-child) {
 		margin-bottom: func.em(16, 22);
 	}
 
-	.card--custom .content {
+	.content:not(:last-child) {
 		margin-bottom: func.em(24, 18);
-	}
-
-	.card--custom .level {
-		font-size: func.em(16);
-	}
-
-	.card--custom .media-content p {
-		font-size: func.em(16);
 	}
 }

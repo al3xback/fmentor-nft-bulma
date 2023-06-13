@@ -6,6 +6,11 @@
 	$card-background-color: var.$color-dark-blue-2,
 	$card-radius: 15px,
 	$card-shadow: 0 func.em(25) func.em(50) rgba(0, 0, 0, 0.1),
+	$card-content-padding: 0,
+	$title-color: var.$color-soft-blue,
+	$title-size: 1.375em,
+	$title-line-height: 1.2727,
+
 	$footer-padding: 0.75rem 0,
 	$footer-background-color: transparent
 );

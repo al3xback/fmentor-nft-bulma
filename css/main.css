@@ -2611,10 +2611,10 @@ a.tag:hover {
 }
 
 .title {
-  color: hsl(0, 0%, 21%);
-  font-size: 2rem;
+  color: hsl(215, 51%, 70%);
+  font-size: 1.375em;
   font-weight: 600;
-  line-height: 1.125;
+  line-height: 1.2727;
 }
 .title strong {
   color: inherit;
@@ -3886,7 +3886,7 @@ a.tag:hover {
 
 .card-content {
   background-color: transparent;
-  padding: 1.5rem;
+  padding: 0;
 }
 
 .card-footer {
@@ -10285,111 +10285,40 @@ html {
   overflow: visible;
 }
 
-.card--custom {
-  width: 100%;
+.card {
   max-width: 21.875em;
-  padding: 1.5em;
-  margin: 2.5em 0 3.75em;
 }
 
-.card--custom .card-image {
-  margin-bottom: 1.5em;
-}
-
-.card--custom .card-image .image {
-  background-color: hsl(215, 51%, 70%);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.card--custom .card-image .image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  background-color: hsla(178, 100%, 50%, 0.5);
-  background-image: url("../images/icons/view.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-border-radius: inherit;
-  -moz-border-radius: inherit;
-  border-radius: inherit;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  opacity: 0;
-}
-
-.card--custom .card-image .image:hover::after {
-  opacity: 1;
-}
-
-.card--custom .card-image .image img {
+.card-image:first-child img {
   -webkit-border-radius: inherit;
   -moz-border-radius: inherit;
   border-radius: inherit;
 }
 
-.card--custom .card-content {
-  padding: 0;
+.card-content:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
-.card--custom .title {
-  font-size: 1.375em;
-  color: hsl(215, 51%, 70%);
-  line-height: 1.2727;
-}
-
-.card--custom .title {
+.title:not(:last-child) {
   margin-bottom: 0.5454545455em;
 }
 
-.card--custom .content {
+.content:not(:last-child) {
   margin-bottom: 0.8888888889em;
 }
 
-.card--custom .level {
-  font-size: 0.9375em;
-}
-
-.card--custom .level-left {
-  font-weight: 600;
-  color: hsl(178, 100%, 50%);
-}
-
-.card--custom .icon {
+.icon {
   width: 1.2em;
 }
 
-.card--custom .media {
-  padding-top: 1em;
-  margin-top: 1em;
-  border-top: 1px solid hsl(215, 32%, 27%);
-}
-
-.card--custom .media-left .image img {
-  border: 1px solid hsl(0, 0%, 100%);
-}
-
-.card--custom .media-content p {
-  font-size: 0.9375em;
-}
-
 @media (min-width: 48em) {
-  .card--custom .title {
+  .title:not(:last-child) {
     margin-bottom: 0.7272727273em;
   }
-  .card--custom .content {
+  .content:not(:last-child) {
     margin-bottom: 1.3333333333em;
-  }
-  .card--custom .level {
-    font-size: 1em;
-  }
-  .card--custom .media-content p {
-    font-size: 1em;
   }
 }
 /* Box sizing rules */
@@ -10570,6 +10499,78 @@ i[class^=icon-] {
   background-image: url("../images/icons/clock.svg");
 }
 
+.card {
+  width: 100%;
+  padding: 1.5em;
+  margin: 2.5em 0 3.75em;
+}
+
+.card-image {
+  margin-bottom: 1.5em;
+}
+
+.card-image .image {
+  background-color: hsl(215, 51%, 70%);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-image .image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-image: url("../images/icons/view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  border-radius: inherit;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.card-image .image:hover::after {
+  opacity: 1;
+}
+
+.level {
+  font-size: 0.9375em;
+}
+
+.level-left {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.media {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.media-left .image img {
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.media-content p {
+  font-size: 0.9375em;
+}
+
+@media (min-width: 48em) {
+  .level {
+    font-size: 1em;
+  }
+  .media-content p {
+    font-size: 1em;
+  }
+}
 .container {
   padding: 0 1.5em;
 }
