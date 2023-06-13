@@ -1,7 +1,16 @@
+@use 'sass:math';
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 
 @forward '../../node_modules/bulma/bulma.sass' with (
+	$body-background-color: var.$color-dark-blue-1,
+	$body-overflow-x: visible,
+	$body-overflow-y: visible,
+	$body-family: var.$font-family-primary,
+	$body-font-size: func.em(16),
+	$body-weight: var.$font-weight-400,
+	$body-line-height: math.div(20, 16),
+	$body-color: var.$color-soft-blue,
 	$card-color: inherit,
 	$card-background-color: var.$color-dark-blue-2,
 	$card-radius: 15px,

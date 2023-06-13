@@ -296,13 +296,13 @@ th:not([align]) {
 }
 
 html {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 54%, 11%);
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-x: visible;
+  overflow-y: visible;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
 }
@@ -323,7 +323,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 code,
@@ -334,10 +334,10 @@ pre {
 }
 
 body {
-  color: hsl(0, 0%, 29%);
+  color: hsl(215, 51%, 70%);
   font-size: 1em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 a {
@@ -10281,10 +10281,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 0.75rem 0;
 }
 
-html {
-  overflow: visible;
-}
-
 .card {
   max-width: 21.875em;
 }
@@ -10359,7 +10355,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -10445,13 +10440,7 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  background-color: hsl(217, 54%, 11%);
-  font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 1em;
-  font-weight: 400;
-  color: hsl(215, 51%, 70%);
-  line-height: 1.25;
 }
 
 ul,
@@ -10460,24 +10449,11 @@ ol {
   padding: 0;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-decoration: none;
-}
-
-.btn--link {
+.link {
   color: hsl(0, 0%, 100%);
-  -webkit-transition: color 0.15s ease-in-out;
-  -moz-transition: color 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out;
 }
 
-.btn--link:hover {
+.link:hover {
   color: hsl(178, 100%, 50%);
 }
 

@@ -1,10 +1,6 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/mixins' as mix;
 
-html {
-	overflow: visible;
-}
-
 .card {
 	max-width: func.em(350);
 }
