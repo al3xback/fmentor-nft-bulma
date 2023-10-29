@@ -20,7 +20,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Bulma (css library)
+- Bulma
 - Mobile-first workflow
 
 ## Author
