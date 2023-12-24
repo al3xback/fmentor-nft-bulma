@@ -21,14 +21,13 @@
 	content: '';
 	position: absolute;
 	inset: 0;
-	margin: auto;
 	background-color: var.$color-cyan-light;
 	background-image: url('../images/icons/view.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: inherit;
-	transition: opacity 0.3s;
 	opacity: 0;
+	transition: opacity 0.3s;
 }
 
 .card-image .image:hover::after {
