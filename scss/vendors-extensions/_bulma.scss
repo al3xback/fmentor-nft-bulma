@@ -17,7 +17,7 @@
 }
 
 .content:not(:last-child) {
-	margin-bottom: func.em(16, 18);
+	margin-bottom: func.em(18);
 }
 
 .icon {
@@ -31,5 +31,6 @@
 
 	.content:not(:last-child) {
 		margin-bottom: func.em(24, 18);
+		font-size: func.em(18);
 	}
 }
